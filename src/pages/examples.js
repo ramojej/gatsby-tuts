@@ -1,5 +1,5 @@
 import React from "react"
-import Navbar from "../components/Navbar"
+import Layout from "../components/layout"
 import HeaderHook from "../examples/Header-Hooks"
 import HeaderStatic from "../examples/Header-Static"
 import { graphql } from "gatsby"
@@ -8,8 +8,7 @@ const examples = props => {
   const { name, age } = props.data.site.siteMetadata.person
 
   return (
-    <>
-      <Navbar />
+    <Layout>
       Examples Page
       <HeaderHook />
       <HeaderStatic />
@@ -18,7 +17,7 @@ const examples = props => {
         <h4>Name: {name}</h4>
         <h4>Age: {age}</h4>
       </div>
-    </>
+    </Layout>
   )
 }
 
