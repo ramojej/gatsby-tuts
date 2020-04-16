@@ -1,13 +1,15 @@
 import React from "react"
 import Navbar from "../components/Navbar"
-import Header from "../examples/Header"
+import HeaderHook from "../examples/Header-Hooks"
+import HeaderStatic from "../examples/Header-Static"
 
 const examples = () => {
   return (
     <>
       <Navbar />
       Examples Page
-      <Header />
+      <HeaderHook />
+      <HeaderStatic />
     </>
   )
 }
