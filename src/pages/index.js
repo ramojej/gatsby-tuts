@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 export default () => (
   <Layout>
-    <h1>Home Page</h1>
+    <h1 style={{ color: "red" }}>Home Page</h1>
     Hello people!
   </Layout>
 )
