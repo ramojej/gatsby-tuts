@@ -39,7 +39,7 @@ SingleTour.propTypes = {
     country: PropTypes.string.isRequired,
     days: PropTypes.number.isRequired,
     images: PropTypes.arrayOf(PropTypes.object).isRequired,
-  }),
+  }).isRequired,
 }
 
 export default SingleTour
