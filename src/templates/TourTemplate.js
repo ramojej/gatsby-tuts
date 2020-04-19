@@ -5,7 +5,7 @@ import styles from "../css/template.module.css"
 import Image from "gatsby-image"
 import { FaMoneyBillWave, FaMap } from "react-icons/fa"
 import { Link } from "gatsby"
-//import PropTypes from "prop-types"
+import PropTypes from "prop-types"
 
 const TourTemplate = ({ data }) => {
   console.log(data)
@@ -86,13 +86,13 @@ export const query = graphql`
   }
 `
 
-// TourTemplate.propTypes = {
-//   data: PropTypes.shape({
-//     name: PropTypes.string.isRequired,
-//     price: PropTypes.number.isRequired,
-//     country: PropTypes.string.isRequired,
-//     days: PropTypes.number.isRequired,
-//   }).isRequired,
-// }
+TourTemplate.propTypes = {
+  data: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    country: PropTypes.string.isRequired,
+    days: PropTypes.number.isRequired,
+  }).isRequired,
+}
 
 export default TourTemplate
